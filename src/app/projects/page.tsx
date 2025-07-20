@@ -73,6 +73,7 @@ export default function ProjectsPage() {
                     width={600}
                     height={400}
                     className="rounded-xl shadow-2xl hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    unoptimized
                   />
                 </Link>
               </div>
@@ -162,6 +163,7 @@ export default function ProjectsPage() {
                   width={20}
                   height={20}
                   className="filter invert"
+                  unoptimized
                 />
                 <span>GitHub</span>
               </a>
@@ -178,6 +180,7 @@ export default function ProjectsPage() {
                   width={20}
                   height={20}
                   className="filter invert"
+                  unoptimized
                 />
                 <span>Medium</span>
               </a>

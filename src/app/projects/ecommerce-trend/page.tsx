@@ -56,6 +56,7 @@ export default function EcommerceTrendPage() {
                   className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300 cursor-pointer shadow-2xl border-2 rounded-2xl"
                   style={{ borderColor: 'var(--border)' }}
                   priority
+                  unoptimized
                 />
               </a>
               <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none rounded-2xl"></div>
@@ -209,7 +210,7 @@ export default function EcommerceTrendPage() {
             className="inline-block px-8 py-4 text-lg font-medium rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
             style={{ backgroundColor: 'var(--accent)', color: '#1f2937' }}
           >
-            ← 返回專案列表
+          返回專案列表
           </Link>
         </section>
     </div>

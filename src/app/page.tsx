@@ -14,6 +14,7 @@ export default function Home() {
               width={120}
               height={120}
               className="mx-auto rounded-2xl shadow-2xl bg-black"
+              unoptimized
             />
           </div>
           <h1 className="text-5xl lg:text-7xl font-bold mb-6" style={{
@@ -48,6 +49,7 @@ export default function Home() {
                 width={20}
                 height={20}
                 className="filter invert"
+                unoptimized
               />
               <span>GitHub</span>
             </a>
@@ -63,6 +65,7 @@ export default function Home() {
                 alt="Medium"
                 width={20}
                 height={20}
+                unoptimized
               />
               <span>Medium 文章</span>
             </a>
@@ -81,6 +84,7 @@ export default function Home() {
                   width={400}
                   height={200}
                   className="rounded-lg w-full h-48 object-cover"
+                  unoptimized
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-accent">📊 電商趨勢分析平台</h3>
@@ -163,6 +167,7 @@ export default function Home() {
                 width={20}
                 height={20}
                 className="filter invert"
+                unoptimized
               />
               <span>GitHub</span>
             </a>
@@ -178,6 +183,7 @@ export default function Home() {
                 width={20}
                 height={20}
                 className="filter invert"
+                unoptimized
               />
               <span>Medium</span>
             </a>
