@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { getImagePath } from '@/utils/paths';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <section className="text-center mb-16 animate-fade-in-up">
           <div className="mb-8">
             <Image
-              src="/images/logo.png"
+              src={getImagePath("/images/logo.png")}
               alt="JackLibra Logo"
               width={120}
               height={120}
@@ -44,7 +45,7 @@ export default function Home() {
               style={{ backgroundColor: 'var(--secondary)' }}
             >
               <Image
-                src="/images/github-icon.png"
+                src={getImagePath("/images/github-icon.png")}
                 alt="GitHub"
                 width={20}
                 height={20}
@@ -61,7 +62,7 @@ export default function Home() {
               style={{ backgroundColor: 'var(--accent)', color: '#1f2937' }}
             >
               <Image
-                src="/images/Medium-Icon-Black.png"
+                src={getImagePath("/images/Medium-Icon-Black.png")}
                 alt="Medium"
                 width={20}
                 height={20}
@@ -79,7 +80,7 @@ export default function Home() {
             <Link href="/projects/ecommerce-trend" className="card hover:scale-105 transition-transform">
               <div className="mb-4">
                 <Image
-                  src="/images/ecommerce-preview.png"
+                  src={getImagePath("/images/ecommerce-preview.png")}
                   alt="電商趨勢分析平台"
                   width={400}
                   height={200}
@@ -162,7 +163,7 @@ export default function Home() {
               className="flex items-center space-x-2 px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg transition-colors"
             >
               <Image
-                src="/images/github-icon.png"
+                src={getImagePath("/images/github-icon.png")}
                 alt="GitHub"
                 width={20}
                 height={20}
@@ -178,7 +179,7 @@ export default function Home() {
               className="flex items-center space-x-2 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors"
             >
               <Image
-                src="/images/Medium-Icon-Black.png"
+                src={getImagePath("/images/Medium-Icon-Black.png")}
                 alt="Medium"
                 width={20}
                 height={20}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getImagePath } from '@/utils/paths';
 
 export default function ProjectsPage() {
   return (
@@ -68,7 +69,7 @@ export default function ProjectsPage() {
               <div className="order-first lg:order-last">
                 <Link href="/projects/ecommerce-trend">
                   <Image
-                    src="/images/ecommerce-preview.png"
+                    src={getImagePath("/images/ecommerce-preview.png")}
                     alt="電商趨勢分析平台預覽"
                     width={600}
                     height={400}
@@ -158,7 +159,7 @@ export default function ProjectsPage() {
                 style={{ backgroundColor: 'var(--primary)' }}
               >
                 <Image
-                  src="/images/github-icon.png"
+                  src={getImagePath("/images/github-icon.png")}
                   alt="GitHub"
                   width={20}
                   height={20}
@@ -175,7 +176,7 @@ export default function ProjectsPage() {
                 style={{ backgroundColor: 'var(--secondary)' }}
               >
                 <Image
-                  src="/images/Medium-Icon-Black.png"
+                  src={getImagePath("/images/Medium-Icon-Black.png")}
                   alt="Medium"
                   width={20}
                   height={20}

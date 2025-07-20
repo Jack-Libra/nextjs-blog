@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { getImagePath } from '@/utils/paths';
 
 export default function EcommerceTrendPage() {
   return (
@@ -49,7 +50,7 @@ export default function EcommerceTrendPage() {
                 className="block"
               >
                 <Image
-                  src="/images/ecommerce-preview.png"
+                  src={getImagePath("/images/ecommerce-preview.png")}
                   alt="電商趨勢分析平台預覽"
                   width={1100}
                   height={690}

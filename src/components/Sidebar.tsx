@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { getImagePath } from '@/utils/paths';
 
 export default function Sidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -75,7 +76,7 @@ export default function Sidebar() {
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 hover:text-accent transition-colors p-2 rounded-lg hover:bg-gray-800/50"
               >
-                <img src="/images/Medium-Icon-Black.png" alt="Medium" className="w-6 h-5" />
+                <img src={getImagePath("/images/Medium-Icon-Black.png")} alt="Medium" className="w-6 h-5" />
                 <span className="text-sm">  Medium</span>
               </a>
             </li>
@@ -86,7 +87,7 @@ export default function Sidebar() {
                 rel="noopener noreferrer"
                 className="flex hover:text-accent transition-colors p-2 rounded-lg hover:bg-gray-800/50"
               >
-                <img src="/images/github-icon.png" alt="GitHub" className="w-10 h-5" />
+                <img src={getImagePath("/images/github-icon.png")} alt="GitHub" className="w-10 h-5" />
                 <span className="text-sm">GitHub</span>
               </a>
             </li>

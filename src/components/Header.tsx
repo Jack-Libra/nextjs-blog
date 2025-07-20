@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { getImagePath } from '@/utils/paths';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <Image
-              src="/images/logo.png"
+              src={getImagePath("/images/logo.png")}
               alt="JackLibra Logo"
               width={40}
               height={40}
@@ -33,7 +34,7 @@ export default function Header() {
               title="Medium"
             >
               <Image
-                src="/images/Medium-Icon-Black.png"
+                src={getImagePath("/images/Medium-Icon-Black.png")}
                 alt="Medium"
                 width={24}
                 height={24}
@@ -48,7 +49,7 @@ export default function Header() {
               title="GitHub"
             >
               <Image
-                src="/images/github-icon.png"
+                src={getImagePath("/images/github-icon.png")}
                 alt="GitHub"
                 width={60}
                 height={60}
@@ -98,7 +99,7 @@ export default function Header() {
                 className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors font-medium"
               >
                 <Image
-                  src="/images/Medium-Icon-Black.png"
+                  src={getImagePath("/images/Medium-Icon-Black.png")}
                   alt="Medium"
                   width={20}
                   height={20}
@@ -113,7 +114,7 @@ export default function Header() {
                 className="flex items-center space-x-2 text-gray-300 hover:text-accent transition-colors font-medium"
               >
                 <Image
-                  src="/images/github-icon.png"
+                  src={getImagePath("/images/github-icon.png")}
                   alt="GitHub"
                   width={20}
                   height={20}
